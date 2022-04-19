@@ -1,0 +1,53 @@
+.card {
+  &__projects {
+    width: 100%;
+    margin: 1rem;
+    max-width: 22rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+
+    &__img {
+      width: 100%;
+      height: 15rem;
+      border-radius: 2px;
+      background-position: center;
+      background-size: cover;
+      box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5);
+    }
+
+    &__heading {
+      padding-top: 1rem;
+      font-family: $heading-font;
+      font-size: 2rem;
+    }
+
+    &__btn {
+      margin-top: 5px;
+      text-transform: uppercase;
+      padding: 1rem 2rem;
+      border-radius: 2px;
+      font-family: $heading-font;
+      font-size: 2rem;
+      border: none;
+      color: #f5f5f5;
+      background-color: #343a40;
+      transition: all 0.3s;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        transform: translateY(-4px);
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.4);
+      }
+
+      &:active {
+        transform: translateY(-1px);
+        box-shadow: 0 0 0.6rem rgba(0, 0, 0, 0.5);
+      }
+    }
+  }
+}

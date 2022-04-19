@@ -1,0 +1,29 @@
+@keyframes rollPrev {
+	0% {
+    transform: translateX(0);
+	}
+
+	100% {
+    transform: translateX(100%);
+	}
+}
+
+@keyframes rollNext {
+	0% {
+		transform: translateX(0);
+	}
+
+	100% {
+		transform: translateX(-100%);
+	}
+}
+
+@keyframes rollInPrev {
+	0% {
+		transform: translateX(-100%);
+	}
+
+	100% {
+		transform: translateX(0);
+	}
+}

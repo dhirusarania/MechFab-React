@@ -1,0 +1,54 @@
+.carousel {
+	height: 100%;
+	width: 100%;
+	position: relative;
+	overflow: hidden;
+
+	&__container {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
+
+	&__header {
+		& .carousel__container {
+			z-index: 100;
+		}
+
+		& .carousel__item {
+			animation-duration: 3s;
+		}
+	}
+
+	&__item {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		left: 0;
+		transform: translateX(100%);
+		will-change: transform;
+		animation-duration: 2s;
+		animation-timing-function: cubic-bezier(.62,.12,.52,.94);
+		transition: transform 2s cubic-bezier(.62,.12,.52,.94);
+
+		&--active {
+			transform: translateX(0);
+			z-index: 11;
+		}
+
+		&--next {
+			z-index: 9;
+			animation-name: rollNext;
+		}
+
+		&--previous {
+			z-index: 10;
+			animation-name: rollPrev;
+
+			&-in {
+				animation-name: rollInPrev;
+			}
+		}
+	}
+}
