@@ -416,17 +416,60 @@ const home = props => {
 };
 
 home.getInitialProps = async () => {
-  const res = await fetch("http://13.232.172.236/api/home");
-  const data = await res.json();
+  // const res = await fetch("http://13.232.172.236/api/home");
+  // const data = await res.json();
 
-  const projects = [];
-  for (let i = 0; i < data.body.workdone.length; i++) {
-    if (data.body.workdone[i].info) {
-      const main = { ...data.body.workdone[i] };
-      main.img = "http://13.232.172.236/api/" + data.body.workdone[i].img;
-      projects.push(main);
-    }
-  }
+  const projects = [
+    {
+      key: 1,
+      header: "Spice Processing unit Under Amalgamated Plantations Pvt. Ltd (TATA)",
+      info: "Koliabour (Nagaon)",
+      img: "/static/ourwork/spice.jpg",
+    },
+    {
+      key: 2,
+      header: "Oil Storage Tank",
+      info: "EMAMI Ltd",
+      img: "/static/ourwork/oil.jpg",
+    },
+    {
+      key: 3,
+      header: "Hanger under Brahmaputra Board",
+      info: "Brahmaputra Board",
+      img: "/static/ourwork/hanger.jpg",
+    },
+    {
+      key: 4,
+      header: "Payapani Bridge, Arunachal Pradesh under Project Udayak",
+      info: "Arunachal Pradesh",
+      img: "/static/ourwork/footbridge.jpg",
+    },
+    {
+      key: 5,
+      header: "Beki Bridge",
+      info: "Barpeta",
+      img: "/static/ourwork/beki.jpg",
+    },
+    {
+      key: 6,
+      header: "PEB Garment Manufacturing Centre",
+      info: "Aizawl (Mizoram)",
+      img: "/static/ourwork/mizoram.jpg",
+    },
+    {
+      key: 7,
+      header: "Warehouse at Guwahati",
+      info: "Guwahati",
+      img: "/static/ourwork/warehouse.jpg",
+    },
+  ];
+  // for (let i = 0; i < data.body.workdone.length; i++) {
+  //   if (data.body.workdone[i].info) {
+  //     const main = { ...data.body.workdone[i] };
+  //     main.img = "http://13.232.172.236/api/" + data.body.workdone[i].img;
+  //     projects.push(main);
+  //   }
+  // }
 
   return { projects };
 };
