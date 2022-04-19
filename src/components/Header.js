@@ -10,16 +10,19 @@ import {
 } from "../store/actions";
 import CarouselComponent from "../components/carousel/Carousel";
 import CarouselBackgrounds from "../components/carousel/carouselBackgrounds";
-import img1 from "../../static/img/DSC_0505.jpg";
-import img2 from "../../static/img/DSC_0599.jpg";
-import img3 from "../../static/img/IMG-20160912-WA0001.jpg";
-import img4 from "../../static/img/8.jpg";
-import img5 from "../../static/img/20180202_124104.jpg";
+import img1 from "../../static/header/1.jpg";
+import img2 from "../../static/header/2.jpg";
+import img3 from "../../static/header/3.jpg";
+import img4 from "../../static/header/4.jpg";
+import img5 from "../../static/header/5.jpg";
+import img6 from "../../static/header/6.jpg";
+import img7 from "../../static/header/7.jpg";
+import img8 from "../../static/header/8.jpg";
 
 const Header = props => {
-  const carouselBackgroundImages1 = [img1, img2, img3, img4, img5];
-  const carouselBackgroundImages2 = [img3, img5, img2, img1, img4];
-  const carouselBackgroundImages3 = [img2, img1, img4, img3, img5];
+  const carouselBackgroundImages1 = [img1, img2, img3, img7, img5, img6, img4, img8];
+  const carouselBackgroundImages2 = [img6, img5, img2, img8, img4, img3, img7, img1];
+  const carouselBackgroundImages3 = [img8, img1, img4, img3, img7, img6, img5, img2];
   const carouselBackgrounds = images => {
     return images.map((img, i) => {
       return <CarouselBackgrounds key={i} img={img} />;
@@ -97,8 +100,8 @@ const Header = props => {
           <div className="homepage__contact d-flex flex-column justify-content-center align-items-center">
             <span>info@mechfab.org</span>
             <span className="homepage__divider"></span>
-            <span>+91-97060-99975</span>
-            <span>0361-2465511/2465512(F),2550179</span>
+            <span>+91-97060-99974, +91-97060-99975</span>
+            <span>0361-2465511</span>
           </div>
           <div className="homepage__address d-flex justify-content-around align-items-center">
             <h3 className="d-inline-block">Industrial Area, Bamunimaidan</h3>

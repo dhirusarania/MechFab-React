@@ -66,11 +66,11 @@ export default () => {
         us using the information below.
       </p>
       <ul style={{ listStyle: "none" }}>
-        <li>Industrial Area, Bamunimaidan</li>
+        <li>Industrial Area, Bamunimaidan, Guwahati-781021, Assam</li>
         <li>Guwahati-781021</li>
         <li>Assam, India</li>
         <li>info@mechfab.org</li>
-        <li>+91-97060-99975</li>
+        <li>+91-97060-99974, +91-97060-99975</li>
       </ul>
     </div>
   );

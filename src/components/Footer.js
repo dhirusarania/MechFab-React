@@ -21,6 +21,8 @@ const Footer = props => {
                 28 June 1996. We are a certified mechanical fabrication and
                 construction industry (read more about our certifications)
               </p>
+              <p>Regd Office & Works<br></br>Industrial Area, Bamunimaidan, Guwahati-781021, Assam</p>
+              <p>Admin Office<br></br>Anil Plaza II, 2nd Floor, G.S. Road, Guwahati-781005, Assam</p>
             </div>
           </div>
           <div className="col-sm">
@@ -28,28 +30,22 @@ const Footer = props => {
               <h4>Get In Touch</h4>
               <ul>
                 <li className="d-flex">
-                  <div style={{ width: "2rem" }}>
-                    <img src="/static/d3701288-6978-43b4-81d3-15b5fff9cb74.svg" />
+                  <div className="center" style={{ width: "2rem" }}>
+                    <img src="/static/8cfb22a8-91e2-40d5-9b91-1807f9ec9b15.svg" />
                   </div>
-                  <div>Industrial Area, Bamunimaidan, Guwahati-781021.</div>
+                  <div>+91-97060-99974, +91-97060-99975</div>
                 </li>
                 <li className="d-flex">
                   <div className="center" style={{ width: "2rem" }}>
                     <img src="/static/0f22b45b-b12d-481c-ad02-dac833c906ba.svg" />
                   </div>
-                  <div>0361- 2465511/2465512 (F), 2550179.</div>
+                  <div>0361- 2465511</div>
                 </li>
                 <li className="d-flex">
                   <div className="center" style={{ width: "2rem" }}>
                     <img src="/static/98fd4b0a-c616-440a-b3d6-a96f0c296f47.svg" />
                   </div>
                   <div>info@mechfab.org</div>
-                </li>
-                <li className="d-flex">
-                  <div className="center" style={{ width: "2rem" }}>
-                    <img src="/static/8cfb22a8-91e2-40d5-9b91-1807f9ec9b15.svg" />
-                  </div>
-                  <div>+91 - 97060- 99975</div>
                 </li>
                 <li className="d-flex">
                   <div className="center" style={{ width: "2rem" }}>
